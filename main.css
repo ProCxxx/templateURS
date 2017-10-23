@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body {
+    background-color: rgba(200, 200, 200, 1);
+}
+header p {
+    font-size: 10vh;
+    font-weight: 900;
+    color: rgba(10, 10, 100, 0.5);
+    text-align: center;
+    text-decoration: none;
+    padding: 2vh 0 0 0;
+}
+nav {
+    text-align: center;
+    word-spacing: 1vw;
+    padding-top: 3vh;
+}
+nav ol li {
+    display: inline;
+}
+nav ol li a {
+    font-size: 5vh;
+    color: rgba(10, 100, 100, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header,
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(10, 10, 100, 0.5);
+}
+#logo {
+    position: absolute;
+    width: 20vw;
+    height: 23vh;
+}
+#left {
+    position: absolute;
+    left: 0;
+    top: 23vh;
+    padding: 1vh 1vw;
+    width: 18vw;
+    height: 75vh;
+    text-align: center;
+    background: rgba(10, 10, 100, 0.5);
+    font-size: 2vh;
+}
+#left p {
+    text-transform: uppercase;
+    color: rgba(10, 100, 100, 0.5);
+}
+#left a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(10, 10, 100, 0.5);
+}
+#left img.leftimg {
+    padding: 1vh 0;
+    width: 18vw;
+    height: 15vw;
+}
+#right {
+    position: absolute;
+    left: 80vw;
+    top: 23vh;
+    padding: 1vh 1vw;
+    width: 18vw;
+    height: 75vh;
+    text-align: center;
+    background: rgba(10, 10, 100, 0.5);
+    font-size: 2vh;
+}
+#right p {
+    text-transform: uppercase;
+    color: rgba(10, 100, 100, 0.5);
+}
+#right img {
+    width: 18vw;
+    height: 10vh;
+}
+#right a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(10, 10, 100, 0.5);
+}
+#center {
+    position: absolute;
+    left: 20vw;
+    top: 23vh;
+    width: 60vw;
+    height: 75vh;
+    font-size: 2vh;
+}
+#center .title {
+    float: left;
+    font-size: 5vh;
+    color: rgba(10, 100, 100, 0.5);
+}
+#center .date {
+    padding-top: 1vh;
+    padding-right: 1vw;
+    float: right;
+    font-size: 2vh;
+    color: rgba(10, 10, 100, 0.5);
+}
+#center .author {
+    font-size: 2vh;
+    color: rgba(10, 10, 100, 0.5);
+}
+#center .postimg {
+    float: left;
+    width: 25%;
+    height: 25%;
+}
+#center .post {
+    font-size: 3vh;
+}
