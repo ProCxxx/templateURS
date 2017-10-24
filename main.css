@@ -6,6 +6,11 @@
 body {
     background-color: rgba(200, 200, 200, 1);
 }
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 header p {
     font-size: 10vh;
     font-weight: 900;
@@ -15,6 +20,9 @@ header p {
     padding: 2vh 0 0 0;
 }
 nav {
+	position: fixed;
+	top: 10vh;
+	left: 0;
     text-align: center;
     word-spacing: 1vw;
     padding-top: 3vh;
@@ -35,12 +43,15 @@ nav {
     background-color: rgba(10, 10, 100, 0.5);
 }
 #logo {
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 20vw;
     height: 23vh;
+    z-index: 10;
 }
 #left {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 23vh;
     padding: 1vh 1vw;
@@ -65,7 +76,7 @@ nav {
     height: 15vw;
 }
 #right {
-    position: absolute;
+    position: fixed;
     left: 80vw;
     top: 23vh;
     padding: 1vh 1vw;
@@ -89,7 +100,9 @@ nav {
     color: rgba(10, 10, 100, 0.5);
 }
 #center {
+	z-index: 10;
     position: absolute;
+    scroll-behavior: smooth;
     left: 20vw;
     top: 23vh;
     width: 60vw;
@@ -119,4 +132,14 @@ nav {
 }
 #center .post {
     font-size: 3vh;
+}
+header *,
+nav *,
+#left *,
+#right * {
+	z-index: 1;
+}
+#center  {
+	overflow: auto;
+	z-index: 0
 }
